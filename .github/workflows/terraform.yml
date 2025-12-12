@@ -42,4 +42,5 @@ jobs:
           aws deploy create-deployment \
             --application-name MyApp \
             --deployment-group-name MyApp-DeploymentGroup \
-            --s3-location bucket=my-app-artifacts-bucket,key=app.zip,bundleType=zip
+            --s3-location bucket=my-app-artifacts-bucket111111,key=app.zip,bundleType=zip
+
