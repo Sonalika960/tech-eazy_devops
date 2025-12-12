@@ -1,29 +1,27 @@
-variable "aws_region" {
-  description = "AWS region"
-  default     = "ap-south-1"
+variable "region" {
+  default = "ap-south-1"
 }
 
-variable "aws_profile" {
-  description = "AWS CLI profile name"
-  default     = "default"
+variable "alert_email" {
+  default = "sonali.kale0306@gmail.com"
+}
+
+variable "ami_id" {
+  default = "ami-03695d52f0d883f65"
 }
 
 variable "instance_type" {
-  description = "EC2 instance type"
-  default     = "t2.micro"
+  default = "t3.micro"
 }
 
-variable "stage" {
-  description = "Deployment stage (dev/prod)"
-  type        = string
+variable "min_size" {
+  default = 1
 }
 
-variable "key_name" {
-  description = "Existing AWS key pair name"
-  default = "terraform"
+variable "max_size" {
+  default = 4
 }
 
-variable "app_port" {
-  description = "App port to check"
-  default     = 80
+variable "desired" {
+  default = 1
 }
