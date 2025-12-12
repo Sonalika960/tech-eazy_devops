@@ -2,7 +2,7 @@ provider "aws" {
   region = var.region
 }
 
-#new code
+#new code is
 
 # ----------------------------------------------------------
 # SNS Topic + Email Subscription
