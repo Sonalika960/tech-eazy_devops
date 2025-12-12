@@ -1,6 +1,6 @@
 #!/bin/bash
 # Usage: ./deploy.sh dev  OR  ./deploy.sh prod
-
+#this is my new code
 if [ -z "$1" ]; then
   echo "❌ Please specify environment: dev or prod"
   exit 1
